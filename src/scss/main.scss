@@ -16,6 +16,7 @@
     font-size: 16px;
 }
 
+
 header {
     display: flex;
     /*position: fixed;*/
@@ -56,7 +57,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -100;
+    
 }
 .hero-title {
     font-size: 24px;
@@ -64,15 +65,66 @@ header {
     text-align: center;
     color: var(--color-green);
 }
+.hero-buttom {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-white);
+    padding: 12px 24px 12px 24px;
+    background-color: var(--color-green);
+    width: 176px;
+    gap: 10px;
+}
+.hero-buttom:hover {
+    background-color: var(--color-orange);
+}
+
+/* sección call */
+
+.call {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+    justify-content: center;
+    background-color: var(--light-grey);
+    width: 100vw;
+    height: 340px;
+    line-height: 3em;
+}
+.call-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-green);
+}
+.call-desc {
+    font-size: 14px;
+    color: var(--color-green);
+}
+.call-buttom {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-white);
+    padding: 12px 24px 12px 24px;
+    background-color: var(--color-green);
+    width: 176px;
+    
+    gap: 10px;
+    align-self: center;
+}
+.call-buttom:hover {
+    background-color: var(--color-orange);
+}
 
 
-
+/* sección single */
 
 .single {
     display: flex;
     flex-direction: column;
 }
 
+/* sección footer */
 
 .footer {
     display: flex;
@@ -82,14 +134,14 @@ header {
     background-color: var(--color-green);
     width: 100vw;
     height: 545px;
+    line-height: 1.5;
+   
     
 }
 .footer-title {
     font-size: 20px;
     font-weight: 600;
     color: var(--light-green);
-  
-    
 
 }
 .link-footer {
@@ -114,14 +166,19 @@ header {
 .icons .fa-brands {
     color: var(--light-green);
 }
+.arrow {
+    overflow: hidden;
+}
 .fa-solid {
     height: 24px;
     height: 24px;
-    color: var(--light-green);
-    align-self: flex-end;
+    color: red;
+    float: right;
+    
 }
 
 
+/* mediaqueries */
 
 @media screen and (min-width:900px) {
     .nav-link {
@@ -132,5 +189,6 @@ header {
     }
     .footer { 
         flex-direction: row;
+        justify-content: space-around;
     }
 }
