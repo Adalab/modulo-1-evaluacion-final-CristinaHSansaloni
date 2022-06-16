@@ -5,3 +5,123 @@
 @import 'pages/index';
 */
 @import 'core/reset';
+
+:root {
+    --color-white: #ffffff;
+    --color-green: #0c474b;
+    --light-green: #b6c8c9;
+    --light-grey: #f0ebe5;
+    --color-orange: #ff975a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+    background: pink;
+}
+.menu .fas {
+    position: fixed;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--color-green);
+    margin: 36px 43px 98px 33px;
+
+    
+}
+.nav-link {
+    display: none;/*para que desaparezca*/
+}
+
+.logo {
+    width: 213px;
+    height: 96px;
+    margin: 19px 101px 274px 100px;
+    justify-content: center;
+    
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.bg-hero {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.hero-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-green);
+}
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-green);
+    width: 100vw;
+    height: 545px;
+    
+}
+.footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light-green);
+  
+    
+
+}
+.link-footer {
+    text-decoration: none;
+    color: var(--light-green);
+    font-size: 14px;
+   
+}
+.contact-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light-green);
+}
+.mail {
+    color: var(--light-green);
+    font-size: 14px;
+}
+.subt {
+    color: var(--light-green);
+    font-size: 14px; 
+}
+.icons .fa-brands {
+    color: var(--light-green);
+}
+.fa-solid {
+    height: 24px;
+    height: 24px;
+    color: var(--light-green);
+    align-self: flex-end;
+}
+
+
+
+@media screen and (min-width:900px) {
+    .nav-link {
+        display: block;
+    }
+    .menu .fas {
+        display: none; /*para que desaparezca*/
+    }
+}

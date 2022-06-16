@@ -4,31 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://pro.fontawesome.com" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/d6c53c5dcc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Evaluación final</title>
   </head>
 
   <body>
     <header class="header">
-      <img class="bg-header" src="./assets/images/header.jpg" />
-      <img class="ham" src="./assets/images/menu-icon.png" alt="Menu" />
-      <nav class="nav">
-        <ul>
-          <li><a>Productos</a></li>
-          <li><a>Colecciones</a></li>
-          <li><a>Tienda</a></li>
-          <li><a>Inicio</a></li>
+      <img class="bg-hero" src="./assets/image/header" alt="">
+      <nav class="menu">
+        <a href="https://adalab.es/"><i class="fas fa-bars"></i></a>
+        <ul class="nav">
+          <li><a class="nav-link" href="#">Productos</a></li>
+          <li><a class="nav-link" href="#">Colecciones</a></li>
+          <li><a class="nav-link" href="#">Tienda</a></li>
+          <li><a class="nav-link" href="#">Inicio</a></li>
         </ul>
       </nav>
-      <img class="logo" src="./assets/images/logo.png" alt="Logo" />
-      <section class="hero">
-        <h1 class="hero-title">Disfruta creando espacios</h1>
-        <a class="hero-buttom" href="#">Comprar ahora</a>
-      </section>
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Logo" />
+      </div>
     </header>
+
+    <div class="hero">
+      
+      <h1 class="hero-title">Disfruta creando espacios</h1>
+      <a class="hero-buttom" href="#">Comprar ahora</a>
+    </div>
     <main class="main">
       <section class="spaces">
         <h2>Volverse organizado se siente mejor con open spaces</h2>
@@ -77,25 +82,41 @@
       </section>
     </main>
     <footer class="footer">
+      <h5 class="footer-title">Tienda</h5>
+      <nav class="shop">
+        <ul>
+          <li><a class="link-footer" href="https://adalab.es/">Productos</a></li>
+          <li><a class="link-footer" href="https://adalab.es/">Cajoneras</a></li>
+          <li><a class="link-footer" href="https://adalab.es/">Para toda la casa</a></li>
+          <li><a class="link-footer" href="https://adalab.es/">Habitaciones</a></li>
+        </ul>
+      </nav>
+      <h5 class="footer-title">Nosotros</h5>
       <nav>
         <ul>
-          <li></li>
+          <li><a class="link-footer" href="https://adalab.es/">Nuestra guía</a></li>
+          <li><a class="link-footer" href="https://adalab.es/">Nuestro diseño</a></li>
+          <li><a class="link-footer" href="https://adalab.es/">Nuestra historia</a></li>
+          <li><a class="link-footer" href="https://adalab.es/">Ayuda</a></li>
         </ul>
       </nav>
       <div class="contact">
-        <h4 class="contact-title"></h4>
-        <a href="#">ayuda@openspaces.com</a>
-        <h5>Socios</h5>
+        <h4 class="contact-title">Contacto</h4>
+        <a class="mail" href="#">ayuda@openspaces.com</a>
+        <h5 class="subt">Socios</h5>
         <div class="icons">
-          <a href="https://twitter.com">
-            <i class="fab fa-twitter fa-lg" style="color: #ffffff"></i>
-          </a>
           <a href="https://www.linkedin.com">
-            <i class="fab fa-linkedin-in fa-lg" style="color: #ffffff"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fa-brands fa-twitter"></i>
           </a>
         </div>
       </div>
-      
+      <a href="#header"><i class="fa-solid fa-arrow-up-long"></i></a>
     </footer>
   </body>
 </html>
