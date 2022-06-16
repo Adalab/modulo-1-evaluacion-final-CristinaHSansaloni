@@ -68,6 +68,12 @@ header {
 
 
 
+.single {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .footer {
     display: flex;
     flex-direction: column; 
@@ -123,5 +129,8 @@ header {
     }
     .menu .fas {
         display: none; /*para que desaparezca*/
+    }
+    .footer { 
+        flex-direction: row;
     }
 }
