@@ -17,13 +17,17 @@
 }
 
 
-header {
+.header {
     display: flex;
     /*position: fixed;*/
     top: 0;
     width: 100%;
  
    
+}
+.logo-nav {
+    display: flex;
+    justify-content: space-around;
 }
 .menu .fas {
    position: fixed;
@@ -93,9 +97,27 @@ header {
 .spaces {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--light-grey);
+
     
 }
+.spaces-title {
+    font-size: 24px;
+    color: var(--color-green);
+ 
 
+    
+}
+.features {
+    justify-items: center;
+    align-items: center;
+}
+.features-img {
+    
+}
 /* sección delivery */
 
 .delivery {
@@ -230,13 +252,15 @@ header {
     margin: 0 11px 0 0;
 }
 .arrow {
-    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    left: 90%;
 }
 .fa-solid {
     height: 24px;
     height: 24px;
-    color: red;
-    float: right;
+    color: var(--color-white);
+    
     
 }
 
@@ -248,17 +272,28 @@ header {
         flex-direction: row;
     }
     .nav-link {
-        display: block;
+        display: inline-block;
         position: absolute;
         top: 15px;
         left: 15px;
         padding: 30px 30px 30px 30px;
+        text-decoration: none;
+        color: var(--color-green);
+    
+        
     }
     .menu .fas {
         display: none; /*para que desaparezca*/
     }
     .spaces {
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        gap: 10px;
+    }
+    .spaces-title {
+        grid-column: 1 / 4;
     }
     .footer { 
         flex-direction: row;
