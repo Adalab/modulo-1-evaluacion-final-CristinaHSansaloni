@@ -1,16 +1,16 @@
 .footer {
   background-color: $color-green;
   font-family: $font-family;
+  display: flex;
+  position: relative;
   font-size: 14px;
   color: $light-green;
   padding-top: 56px;
   padding-bottom: 56px;
-  padding-left: 50px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  padding-left: 56px;
   justify-content: 
   center;
+  flex-direction: column;
   align-items: center;
   @media all and (min-width:900px) {
       flex-direction: row;
