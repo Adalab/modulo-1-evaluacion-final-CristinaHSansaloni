@@ -2,37 +2,13 @@
 @import 'core/variables';
 @import 'core/reset';
 @import 'layout/header';
+@import 'layout/features';
 @import 'layout/footer';
-@import 'layout/page';
 
 
 
 
-/* sección spaces */
-.spaces {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    background-color: var(--light-grey);
 
-    
-}
-.spaces-title {
-    font-size: 24px;
-    color: var(--color-green);
- 
-
-    
-}
-.features {
-  
-}
-.features-img {
-    
-}
-/* sección delivery */
 
 .delivery {
     display: flex;
@@ -111,7 +87,7 @@
     flex-direction: column;
 }
 
-/* mediaqueries */
+/*  
 
 @media screen and (min-width:900px) {
     .nav {
@@ -130,9 +106,7 @@
     
         
     }
-    .menu .fas {
-        display: none; /*para que desaparezca*/
-    }
+    
     .spaces {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -164,4 +138,4 @@
     }
 }
 
- 
+*/

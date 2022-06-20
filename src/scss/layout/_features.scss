@@ -1,0 +1,53 @@
+.spaces {
+    display: grid;
+    background-color: $light-grey;
+    color: $color-green;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px 0;
+    @media all and (min-width: 900px) {
+        grid-template-rows: repeat(3, 3fr);
+        grid-template-columns: 2fr 1fr 2fr;
+        padding-bottom: 0.5rem;
+        justify-content: center;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 37px;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: $font-family;
+        margin: 41px 45px 37px 45px;
+        line-height: 2rem;
+        
+        @media all and (min-width: 900px) {
+            text-align: center;   
+            grid-column: span 3; 
+            font-size: 3rem;
+            margin: 41px 200px 0px 200px;
+            line-height: 4rem;
+        }  
+        
+    }
+
+    &__features {
+        text-align: center;
+        font-family: $font-family;
+        margin-bottom: 20px;
+        
+    }
+    &__img {
+        padding-top: 50px;
+    }
+    &__sub {
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    &__desc {
+        font-size: 1rem;
+    }
+}
