@@ -1,0 +1,51 @@
+.delivery {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: $color-orange;
+    width: 100vw;
+    height: 420px;
+    line-height: 3em;
+    color: $color-white;
+    font-family: $font-family;
+    &__img {
+        width: 120px;
+        height: 120px;
+        padding: 12.5px 4px 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__title {
+        margin: 10px 0 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        @media all and (min-width: 900px) {
+            font-size: 1.875rem;
+        }
+        @media all and (min-width: 1728px) {
+            font-size: 2.25rem;
+        }
+    }
+    &__sub {
+        font-size: 0.875rem;
+        margin: 20px 19px 5px 20px;
+        @media all and (min-width: 900px) {
+            font-size: 0.875rem;
+        }
+        @media all and (min-width: 1728px) {
+            font-size: 1rem;
+        }
+    }
+    &__link {
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: underline;
+        color: $color-white;
+        @media all and (min-width: 900px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+
