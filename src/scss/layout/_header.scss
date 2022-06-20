@@ -10,84 +10,86 @@
 
     &__hambu {
         position: fixed;
-        color: $color-green;
-        left: 50px;
-        top: 50px;
-        @media all and (min-width:900px) {
-            left: 80px;
-            top: 80px;
+        color: $color-green; 
+        width: 24px;
+        left: 33px;
+        top: 55px;
+        @media all and (min-width: 900px) {
+            left: 82px;
+            top: 85px;
         }
-        @media all and (min-width:1728px) {
+        @media all and (min-width: 1728px) {
             display: none;
-
         }
     }
     &__menu {
-        display: flex;
-        position: fixed;
-        gap: 20px;
-        padding-top: 50px;
-        transform: translate(10vh);
-        @media all and (min-width:900px) {
-            display: none;
+        display: none;
+        @media all and (min-width: 1728px) {
+            display: flex;
+            position: fixed;
+            gap: 30px;
+            padding-top: 76px;
+            padding-left: 300px;
         }
         &--link {
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: $color-green;
             padding: 15px;
             text-decoration: none;
             font-family: $font-family;
         }
     }
-}
-.log {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    @media all and (min-width:900px) {
-        margin-top: 2rem;
-    }
-    &__logo {
-        height: 6rem;
-        width: 13rem;
-    }
-}
-.hero {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
-    @media all and (min-width:900px) {
-        width: 440px;
-        margin: 0 10vw;
-        align-items: flex-start;
-    }
-    &__title {
-        font-size: 2.5rem;
-        color: $color-green; 
-        font-weight: 600;
-        padding-top: 25vh;
-        text-align: center;
-        padding-bottom: 60px;
-        @media all and (min-width:900px) {
-            text-align: left;
-            font-size: 3.5rem;
+    .log {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 19px;
+        @media all and (min-width: 900px){
+            padding-top: 39px;
+        }
+        &__logo {
+            width: 13.3rem;
+            height: 6rem;
         }
     }
-    &__link {
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.2rem;
-        color: white;
-        text-align: center;
-        padding: 16px 24px 0px 24px;
-        background-color: $color-green;
-        width: 176px;
-        height: 48px;
-    }
-    &__link:hover {
-        background-color: $color-orange;
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        @media all and (min-width: 900px) {
+            width: 440px;
+            margin: 0 10vw;
+            align-items: flex-start;
+        }
+        &__title {
+            font-size: 2rem;
+            color: $color-green;
+            font-family: $font-family;
+            font-weight: 600;
+            padding-top: 25vh;
+            text-align: center;
+            padding-bottom: 60px;
+            @media all and (min-width: 900px) {
+                text-align: left;
+                font-size: 3rem;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: $color-white;
+            text-align: center;
+            align-items: center;
+            padding: 16px 24px 0 24px;
+            background-color: $color-green;
+            width: 170px;
+            height: 45px;
+        }
+        &__link:hover {
+            background-color: $color-orange;
+        }
     }
 }
