@@ -1,0 +1,68 @@
+.call {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+    justify-content: center;
+    background-color: $light-grey;
+    color: $color-green;
+    font-family: $font-family;
+    width: 100vw;
+    height: 340px;
+    line-height: 3.5rem;
+    padding: 87px 27px 92px;
+    &__title {
+        font-size: 1.875rem;
+        font-weight: 600;
+
+    }
+    &__desc {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $light-grey;
+        padding: 12px 24px 12px 24px;
+        background-color: $color-green;
+        width: 176px;
+        height: 48px;
+        gap: 10px;
+        align-self: center;
+    }
+    &__link:hover {
+        background-color: $color-orange;
+    }   
+}
+
+
+.single {
+    display: flex;
+    flex-direction: column;
+    &__img {
+        background: url("./assets/images/creando-espacios.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+
+@media screen and (min-width:1728px) {
+    .callsingle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .call {
+        width: 49vw;
+        height: 571px;  
+    
+    }
+    .single {
+        width: 50vw;
+        height: 571px; 
+    
+    }
+}

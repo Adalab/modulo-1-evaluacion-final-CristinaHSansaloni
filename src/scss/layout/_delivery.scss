@@ -46,6 +46,9 @@
             font-size: 1rem;
         }
     }
+    &__link:hover {
+        color: $color-green;
+    }
 }
 
 
